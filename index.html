@@ -15,7 +15,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            overflow: hidden; /* Prevents confetti from scrolling out of view */
+            overflow: hidden; 
         }
         h1 {
             margin: 20px;
@@ -29,23 +29,24 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            animation: fadeIn 2s ease-in-out, float 2s ease-in-out infinite 2s; 
         }
         .confetti {
             position: absolute;
             width: 10px;
             height: 10px;
-            background-color: #ff69b4; /* Pink color, can vary */
+            background-color: #ff69b4; 
             animation: fall linear infinite;
-            top: -10px; /* Start above the screen */
+            top: -10px; 
         }
         .confetti:nth-child(odd) {
-            background-color: #ffb6c1; /* Lighter pink for variety */
+            background-color: #ffb6c1; 
         }
         .confetti:nth-child(3n) {
-            background-color: #ff1493; /* Deeper pink */
+            background-color: #ff1493; 
         }
         .confetti:nth-child(5n) {
-            background-color: #dc143c; /* Crimson for more variety */
+            background-color: #dc143c; 
         }
         @keyframes fall {
             0% {
@@ -85,17 +86,18 @@
             .flowers {
                 margin-top: 50px;
                 max-height: 1000px;
+                animation: fadeIn 2s ease-in-out, float 2s ease-in-out infinite 2s; 
             }
             .confetti {
                 width: 8px;
-                height: 8px; /* Smaller confetti on mobile for better performance */
+                height: 8px; 
             }
         }
     </style>
 </head>
 <body>
     <h1>Happy Valentine's Day!</h1>
-    <img src="/flower/Bouquet.png" alt="Bouquet of Flowers" class="flowers">
+    <img src="/Bouquet.png" alt="Bouquet of Flowers" class="flowers">
     <!-- Falling Confetti Elements -->
     <div class="confetti"></div>
     <div class="confetti"></div>
